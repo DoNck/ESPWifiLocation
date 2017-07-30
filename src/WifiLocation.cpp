@@ -57,8 +57,8 @@ String WifiLocation::getSurroundingWiFiJson() {
 #ifdef DEBUG_WIFI_LOCATION
     Serial.println(String(numWifi) + " WiFi networks found");
 #endif // DEBUG_WIFI_LOCATION
-	
-	numWifi = numWifi > MAX_WIFI_NETWORKS ? numWifi : MAX_WIFI_NETWORKS; // Limit to MAX_WIFI_NETWORKS
+
+	numWifi = (numWifi > MAX_WIFI_NETWORKS) ? MAX_WIFI_NETWORKS : numWifi; // Limit to MAX_WIFI_NETWORKS
 
     for (uint8_t i = 0; i < numWifi; i++) {//numWifi; i++) {
       //Serial.print("WiFi.BSSID(i) = ");
