@@ -23,6 +23,7 @@
 #endif 
 
 #define MAX_CONNECTION_TIMEOUT 5000
+#define MAX_WIFI_NETWORKS 20
 
 typedef struct {
     float lat = 0;
