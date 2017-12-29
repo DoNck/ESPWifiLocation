@@ -137,6 +137,7 @@ location_t WifiLocation::getGeoFromWiFi() {
     while (millis() - timer < MAX_CONNECTION_TIMEOUT) {
         if (_client.available())
             break;
+        yield ();
     }
     while (_client.available()) {
 #ifdef DEBUG_WIFI_LOCATION
