@@ -3,11 +3,7 @@
 #ifndef _WIFILOCATION_h
 #define _WIFILOCATION_h
 
-#if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
-#else
-#include "WProgram.h"
-#endif
 
 //#define DEBUG_WIFI_LOCATION
 
